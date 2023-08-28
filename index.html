@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Cost accounting</title>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1>Cost accounting calc</h1>
+  <div class="wrap">
+    <form action="javascript:" method="get">
+      <label>Amount
+        <input type="number" name="amount"  step="any" required>
+      </label>
+      <label>Description
+        <input type="text"  maxlength = "30" name="description" required>
+      </label>
+      <label>Date / time
+        <input type="date" name="datetimeLocal">
+      </label>
+      <div class="buttons">  
+        <button id="add-btn">Add</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+      </form>
+
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Description</th>
+          <th>Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <th>0</th>
+          <th>Total</th>
+          <th>1 days</th>
+          <th></th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  </div>
+</body>
+
+</html>
